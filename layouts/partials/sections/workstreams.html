@@ -1,0 +1,29 @@
+{{ with hugo.Data.workstreams }}
+<section id="workstreams" class="section section--alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-label">Hackathon tracks</p>
+      <h2 class="section-title">Workstreams</h2>
+    </div>
+
+    <div class="workstreams-grid">
+      {{ range . }}
+        <article class="workstream-card">
+          <h3 class="workstream-card__title">{{ .title }}</h3>
+          <p class="workstream-card__desc">{{ .description }}</p>
+          {{ with .lead }}
+            <div class="workstream-card__lead">
+              <img
+                src="https://github.com/{{ . }}.png?size=48"
+                alt="{{ . }}"
+                loading="lazy"
+              />
+              <span>@{{ . }}</span>
+            </div>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

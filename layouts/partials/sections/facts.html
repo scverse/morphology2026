@@ -1,0 +1,63 @@
+<section id="about" class="section">
+  <div class="section-inner">
+    <div class="row gy-4">
+      <!-- About text -->
+      <div class="col-12 col-lg-7">
+        <p class="section-label">About the event</p>
+        <h2 class="section-title mb-3">{{ .Site.Params.eventName }}</h2>
+        <div class="section-body">
+          {{ .Content }}
+        </div>
+        {{ with .Site.Params.cta }}
+          <div class="mt-4">
+            <a href="{{ .url }}" class="btn-accent">{{ .label }}</a>
+          </div>
+        {{ end }}
+      </div>
+
+      <!-- Facts cards -->
+      <div class="col-12 col-lg-5">
+        <div class="facts-grid">
+          <!-- Dates -->
+          <div class="fact-card">
+            <div class="fact-card__icon"><i class="bi bi-calendar3" aria-hidden="true"></i></div>
+            <div class="fact-card__label">When</div>
+            <div class="fact-card__value">{{ .Site.Params.eventDates }}</div>
+            {{ with .Site.Params.calendarURL }}
+              <a href="{{ . }}" class="chip" target="_blank" rel="noopener">
+                <i class="bi bi-calendar-plus" aria-hidden="true"></i> Add to calendar
+              </a>
+            {{ end }}
+          </div>
+
+          <!-- Location -->
+          <div class="fact-card">
+            <div class="fact-card__icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+            <div class="fact-card__label">Where</div>
+            <div class="fact-card__value">
+              {{ .Site.Params.eventLocation }}
+              {{ with .Site.Params.venueName }}<br /><span style="font-weight:400;color:#777">{{ . }}</span>{{ end }}
+            </div>
+            {{ with .Site.Params.venueMapURL }}
+              <a href="{{ . }}" class="chip" target="_blank" rel="noopener">
+                <i class="bi bi-pin-map" aria-hidden="true"></i> Get directions
+              </a>
+            {{ end }}
+          </div>
+
+          <!-- GitHub -->
+          {{ with .Site.Params.githubRepo }}
+            <div class="fact-card">
+              <div class="fact-card__icon"><i class="bi bi-github" aria-hidden="true"></i></div>
+              <div class="fact-card__label">Resources</div>
+              <div class="fact-card__value">GitHub repo</div>
+              <a href="{{ . }}" class="chip" target="_blank" rel="noopener">
+                <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open on GitHub
+              </a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

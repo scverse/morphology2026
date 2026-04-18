@@ -1,0 +1,51 @@
+<section class="hero" aria-label="Event hero">
+  <div class="hero__bg">
+    {{ with .Site.Params.heroVideo }}
+      <video autoplay muted loop playsinline aria-hidden="true">
+        <source src="{{ . }}" type="video/mp4" />
+      </video>
+    {{ else }}
+      <img
+        src="{{ .Site.Params.heroImage | default "/img/hero/scverse_symbol.png" }}"
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+      />
+    {{ end }}
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    {{ with .Site.Params.eventSeries }}
+      <p class="hero__series">{{ . }}</p>
+    {{ end }}
+
+    <h1 class="hero__title">{{ .Site.Params.eventName }}</h1>
+
+    <p class="hero__meta">
+      {{ .Site.Params.eventDates }}
+      {{ with .Site.Params.eventLocation }}
+        · {{ . }}
+      {{ end }}
+    </p>
+
+    {{ with .Site.Params.eventTagline }}
+      <p class="hero__tagline">{{ . }}</p>
+    {{ end }}
+
+    <div class="hero__actions">
+      {{ with .Site.Params.cta }}
+        <a href="{{ .url }}" class="btn-accent">{{ .label }}</a>
+      {{ end }}
+      {{ with .Site.Params.calendarURL }}
+        <a href="{{ . }}" class="btn-outline-accent" target="_blank" rel="noopener">
+          <i class="bi bi-calendar-event" aria-hidden="true"></i> Add to calendar
+        </a>
+      {{ end }}
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#about" aria-label="Scroll to content">
+    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+  </a>
+</section>

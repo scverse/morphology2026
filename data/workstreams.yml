@@ -1,0 +1,14 @@
+# Each workstream appears as a card on the homepage.
+# Remove all entries to hide the section.
+# 'lead' is a GitHub username — their avatar is shown automatically.
+- title: "Workstream A"
+  description: "One-sentence description of what this track focuses on."
+  lead: "octocat"
+
+- title: "Workstream B"
+  description: "One-sentence description of what this track focuses on."
+  lead: ""
+
+- title: "Workstream C"
+  description: "One-sentence description of what this track focuses on."
+  lead: ""

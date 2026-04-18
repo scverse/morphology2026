@@ -1,0 +1,17 @@
+# Organisers are grouped by affiliation.
+# 'github' is used to fetch the avatar automatically (leave blank to hide avatar).
+# 'website' is optional.
+groups:
+  - name: "scverse"
+    members:
+      - name: "Your Name"
+        affiliation: "scverse / Your Institution"
+        github: "your-github-handle"
+        website: ""
+
+  - name: "Collaborating Organisation"
+    members:
+      - name: "Collaborator Name"
+        affiliation: "Their Institution"
+        github: ""
+        website: ""

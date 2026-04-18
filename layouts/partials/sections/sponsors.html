@@ -1,0 +1,17 @@
+{{ with hugo.Data.sponsors }}
+<section id="sponsors" class="section section--alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-label">Made possible by</p>
+      <h2 class="section-title">Sponsors</h2>
+    </div>
+    <div class="sponsors-grid">
+      {{ range . }}
+        <a href="{{ .url }}" class="sponsor-item" target="_blank" rel="noopener" title="{{ .name }}">
+          <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy" />
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

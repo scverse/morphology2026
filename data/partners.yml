@@ -1,0 +1,12 @@
+# Collaborating organisations — shown as a logo strip with optional blurb.
+# 'logo' path is relative to static/ (e.g. /img/partners/org.svg).
+# Remove all entries to hide the section.
+- name: "CytoData Society"
+  logo: "/img/partners/cytodata.svg"
+  url: "https://cytodata.org"
+  blurb: "Co-organising partner."
+
+- name: "Your Partner"
+  logo: "/img/partners/partner.svg"
+  url: "https://partner.example.com"
+  blurb: "Brief description of the partnership."

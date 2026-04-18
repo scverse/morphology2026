@@ -1,0 +1,41 @@
+{{ $data := hugo.Data.schedule }}
+<section id="schedule" class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-label">Programme</p>
+      <h2 class="section-title">Schedule</h2>
+    </div>
+
+    {{ if and $data $data.days }}
+      <div class="schedule-tabs" role="tablist" aria-label="Schedule days">
+        {{ range $i, $day := $data.days }}
+          <button
+            class="schedule-tab{{ if eq $i 0 }} active{{ end }}"
+            role="tab"
+            aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+            data-day="{{ $i }}"
+          >{{ $day.label }}</button>
+        {{ end }}
+      </div>
+
+      {{ range $i, $day := $data.days }}
+        <div class="schedule-day{{ if eq $i 0 }} active{{ end }}" data-day="{{ $i }}">
+          {{ if $day.date }}<p style="font-size:.8rem;color:#777;margin-bottom:1rem;">{{ $day.date }}</p>{{ end }}
+          {{ range $day.items }}
+            <div class="schedule-item">
+              <span class="schedule-item__time">{{ .time }}</span>
+              <div class="schedule-item__body">
+                <span class="schedule-item__title">{{ .title }}</span>
+                {{ with .type }}
+                  <span class="schedule-item__badge schedule-item__badge--{{ . }}">{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ else }}
+      <p class="section-body">Schedule to be announced. Check back soon or <a href="{{ .Site.Params.zulipChannel }}" target="_blank" rel="noopener">join our Zulip</a> for updates.</p>
+    {{ end }}
+  </div>
+</section>
