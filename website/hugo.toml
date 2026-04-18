@@ -30,11 +30,11 @@ title = "scverse x morphology"
 # Only change these — everything else (grey scale, typography) is locked to the
 # scverse brand identity and should not be modified.
   [params.theme]
-    accent        = "#262fb5"   # buttons, links, active states
-    accentDark    = "#1a2180"   # hover states
-    gradientStart = "#262fb5"   # hero title gradient — left/top
-    gradientEnd   = "#74c8fa"   # hero title gradient — right/bottom
-    highlight     = "#74c8fa"   # badges, chips, accent lines
+    accent        = "#6aaa2a"   # buttons, links, active states
+    accentDark    = "#2d5a1b"   # hover states
+    gradientStart = "#5abfb7"   # hero title gradient — left/top
+    gradientEnd   = "#c8e832"   # hero title gradient — right/bottom
+    highlight     = "#b8d400"   # badges, chips, accent lines
 
 # ─── Suggested palette presets (copy one block to [params.theme] above) ──────
 # Morphology / orange: accent="#e5864b" accentDark="#b85d2a" gradientStart="#262fb5" gradientEnd="#e5864b" highlight="#fbb822"
