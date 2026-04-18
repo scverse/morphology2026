@@ -15,6 +15,7 @@ title = "scverse x morphology"
   venueMapURL   = "https://maps.app.goo.gl/DJiAjCKN7TkDTU1u5"  # Google Maps / OpenStreetMap URL for "Get directions"
   heroImage     = "/img/hero/scverse_symbol.png"
   heroVideo     = ""            # Set to a .mp4 path to use video instead of image
+  heroSwirl     = "/img/hero/swirl.png"  # Decorative swirl overlay in the hero
 
   # Primary call-to-action button in the hero
   [params.cta]

@@ -296,6 +296,25 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
   }
 
+  &__swirl {
+    position: absolute;
+    bottom: -15%;
+    right: -10%;
+    width: 45%;
+    max-width: 600px;
+    opacity: 0.9;
+    pointer-events: none;
+    transform: rotate(-15deg);
+
+    @media (max-width: 50rem) {
+      width: 70%;
+      right: 50%;
+      transform: translateX(50%) rotate(-15deg);
+      bottom: -5%;
+      opacity: 0.4;
+    }
+  }
+
   &__scroll {
     position: absolute;
     bottom: 2rem;

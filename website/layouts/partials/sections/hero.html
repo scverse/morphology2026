@@ -15,6 +15,16 @@
   </div>
   <div class="hero__overlay" aria-hidden="true"></div>
 
+  {{ with .Site.Params.heroSwirl }}
+  <img
+    class="hero__swirl"
+    src="{{ . }}"
+    alt=""
+    aria-hidden="true"
+    loading="eager"
+  />
+  {{ end }}
+
   <div class="hero__content">
     {{ with .Site.Params.eventSeries }}
       <p class="hero__series">{{ . }}</p>
