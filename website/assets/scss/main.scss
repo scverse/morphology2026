@@ -210,6 +210,61 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// Mobile: transparent nav over dark hero
+@media (max-width: 991px) {
+  .site-nav {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+    position: absolute;
+    width: 100%;
+  }
+
+  .navbar-brand {
+    color: $white !important;
+
+    span:not(.brand-event) {
+      color: $white !important;
+    }
+
+    .brand-separator {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .navbar-toggler {
+    border: none !important;
+    filter: invert(1);
+  }
+
+  // Expanded menu gets a dark backdrop so links are readable
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
+    background: rgba(10, 10, 26, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 0 0 0.75rem 0.75rem;
+    padding: 0.5rem 1rem 1rem;
+    margin: 0 -1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+
+    &:hover {
+      color: $white;
+      background: rgba(255, 255, 255, 0.08);
+    }
+  }
+
+  .nav-cta {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+}
+
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 .hero {
   position: relative;

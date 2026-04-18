@@ -6,7 +6,7 @@
       </video>
     {{ else }}
       <img
-        src="{{ (.Site.Params.heroImage | default "img/hero/scverse_symbol.png") | relURL }}"
+        src="{{ (.Site.Params.heroImage | default "img/hero/scverse_symbol.png" | strings.TrimPrefix "/") | relURL }}"
         alt=""
         aria-hidden="true"
         loading="eager"
@@ -18,7 +18,7 @@
   {{ with .Site.Params.heroSwirl }}
   <img
     class="hero__swirl"
-    src="{{ . | relURL }}"
+    src="{{ . | strings.TrimPrefix "/" | relURL }}"
     alt=""
     aria-hidden="true"
     loading="eager"
