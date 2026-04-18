@@ -1,18 +1,18 @@
 baseURL = "https://scverse.github.io/morphology2026/"
 languageCode = "en-us"
-title = "scverse x Your Event 20XX"
+title = "scverse x morphology"
 
 # ─── Event identity ──────────────────────────────────────────────────────────
 [params]
-  eventName     = "scverse x Your Event"
+  eventName     = "scverse x morphology 2026"
   eventSeries   = "Unifying Omics Hackathon Series"
   eventTagline  = "Collaborative science at the intersection of biology and computation."
-  eventDates    = "Month DD–DD, 20XX"
-  eventStart    = "2026-01-01"  # ISO date — used for calendar links
-  eventEnd      = "2026-01-04"
-  eventLocation = "City, Country"
-  venueName     = "Venue Name (TBA)"
-  venueMapURL   = ""            # Google Maps / OpenStreetMap URL for "Get directions"
+  eventDates    = "September 2 - 4, 2026"
+  eventStart    = "2026-09-02"  # ISO date — used for calendar links
+  eventEnd      = "2026-09-04"
+  eventLocation = "Berlin, Germany"
+  venueName     = "Max Delbrück Center (MDC), Campus Berlin-Buch"
+  venueMapURL   = "https://maps.app.goo.gl/DJiAjCKN7TkDTU1u5"  # Google Maps / OpenStreetMap URL for "Get directions"
   heroImage     = "/img/hero/scverse_symbol.png"
   heroVideo     = ""            # Set to a .mp4 path to use video instead of image
 

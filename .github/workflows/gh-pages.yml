@@ -22,18 +22,18 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --buildFuture --minify
+        run: hugo -s website --buildFuture --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./website/public
 
       - name: Upload page build as artifact
         uses: actions/upload-artifact@v4
         if: github.ref != 'refs/heads/main'
         with:
           name: site-preview
-          path: ./public
+          path: ./website/public
