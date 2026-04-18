@@ -210,35 +210,54 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Mobile: transparent nav over dark hero
+// Mobile: transparent nav floating over dark hero, pops in on scroll
 @media (max-width: 991px) {
   .site-nav {
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    border-bottom: none;
-    position: absolute;
-    width: 100%;
+    position: fixed !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-bottom: none !important;
+    transition: background 250ms ease, backdrop-filter 250ms ease;
+
+    &.nav--scrolled {
+      background: rgba(10, 10, 26, 0.92) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+  }
+
+  // Single row: brand left (hidden at top), toggler right
+  .navbar {
+    flex-wrap: nowrap;
   }
 
   .navbar-brand {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease;
     color: $white !important;
 
-    span:not(.brand-event) {
-      color: $white !important;
+    span:not(.brand-event) { color: $white !important; }
+    .brand-separator {
+      color: rgba(255, 255, 255, 0.5) !important;
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.5) !important;
     }
 
-    .brand-separator {
-      color: rgba(255, 255, 255, 0.5);
+    .nav--scrolled & {
+      opacity: 1;
+      pointer-events: auto;
     }
   }
 
   .navbar-toggler {
     border: none !important;
+    margin-left: auto;
     filter: invert(1);
+    flex-shrink: 0;
   }
 
-  // Expanded menu gets a dark backdrop so links are readable
+  // Expanded menu: dark backdrop
   .navbar-collapse.show,
   .navbar-collapse.collapsing {
     background: rgba(10, 10, 26, 0.92);
@@ -250,16 +269,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85);
-
+    color: rgba(255, 255, 255, 0.85) !important;
     &:hover {
-      color: $white;
+      color: $white !important;
       background: rgba(255, 255, 255, 0.08);
     }
   }
 
   .nav-cta {
-    margin-left: 0;
+    margin-left: 0 !important;
     margin-top: 0.5rem;
     display: inline-block;
   }
@@ -353,21 +371,13 @@ h1, h2, h3, h4, h5, h6 {
 
   &__swirl {
     position: absolute;
-    bottom: -15%;
-    right: -10%;
-    width: 45%;
-    max-width: 600px;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    max-width: none;
     opacity: 0.9;
     pointer-events: none;
-    transform: rotate(-15deg);
-
-    @media (max-width: 50rem) {
-      width: 70%;
-      right: 50%;
-      transform: translateX(50%) rotate(-15deg);
-      bottom: -5%;
-      opacity: 0.4;
-    }
+    transform: none;
   }
 
   &__scroll {

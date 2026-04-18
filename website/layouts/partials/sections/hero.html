@@ -1,12 +1,12 @@
 <section class="hero" aria-label="Event hero">
   <div class="hero__bg">
-    {{ with .Site.Params.heroVideo }}
+    {{ if .Site.Params.heroVideo }}
       <video autoplay muted loop playsinline aria-hidden="true">
-        <source src="{{ . }}" type="video/mp4" />
+        <source src="{{ .Site.Params.heroVideo }}" type="video/mp4" />
       </video>
-    {{ else }}
+    {{ else if .Site.Params.heroImage }}
       <img
-        src="{{ (.Site.Params.heroImage | default "img/hero/scverse_symbol.png" | strings.TrimPrefix "/") | relURL }}"
+        src="{{ (.Site.Params.heroImage | strings.TrimPrefix "/") | relURL }}"
         alt=""
         aria-hidden="true"
         loading="eager"
