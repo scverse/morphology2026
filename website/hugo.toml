@@ -17,16 +17,16 @@ title = "scverse x morphology"
   heroVideo     = ""            # Set to a .mp4 path to use video instead of image
   heroSwirl     = "/img/hero/swirl.png"  # Decorative swirl overlay in the hero
 
+  calendarURL   = ""            # Google Calendar / .ics URL
+  githubRepo    = "https://github.com/scverse/morphology2026"
+  contactEmail  = "morphology2026@scverse.org"
+  zulipChannel  = "https://scverse.zulipchat.com/#narrow/channel/591503-2026-09.3A-hackathon-morphology"
+  linkedinURL   = "https://www.linkedin.com/company/scverse/"
+
   # Primary call-to-action button in the hero
   [params.cta]
     label = "Apply to join"
     url   = "https://luma.com/acc1jjuq"
-
-  calendarURL   = ""            # Google Calendar / .ics URL
-  githubRepo    = "https://github.com/scverse/morphology2026"
-  contactEmail  = "morphology2026@scverse.org"
-  zulipChannel  = "https://scverse.zulipchat.com/#narrow/channel/591503-2026-09.3A-hackathon-morphology"  # direct channel link
-  linkedinURL   = "https://www.linkedin.com/company/scverse/"
 
 # ─── Per-event colour palette ────────────────────────────────────────────────
 # Only change these — everything else (grey scale, typography) is locked to the
