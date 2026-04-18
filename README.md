@@ -1,4 +1,4 @@
-# scverse Morphology Hackathon 2026
+# scverse x morphology hackathon 2026
 
 **September 2-4, 2026 - Max Delbrück Center (MDC), Campus Berlin-Buch**
 
