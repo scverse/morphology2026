@@ -4,19 +4,19 @@
 
 A hands-on hackathon at the intersection of image-based morphological profiling and the scverse ecosystem, jointly organised by scverse, CytoData Society, and EU-OPENSCREEN.
 
-Full details, programme, and registration at **[scverse.github.io/morphology2026](https://scverse.github.io/morphology2026/)**.
+Full details, programme, and registration at **[scverse.org/morphology2026](https://scverse.org/morphology2026)**.
 
 ---
 
 ## Tracks
 
-**Track 1 - Image-based profiling with scverse tooling**
+**Track 1: Image-based profiling with scverse tooling**
 Integrating Scanpy and AnnData into Cell Painting workflows, from raw image ingestion through CellProfiler-compatible feature extraction to population-level profile aggregation.
 
-**Track 2 - Single-cell perturbation tools for phenomics**
+**Track 2: Single-cell perturbation tools for phenomics**
 Applying pertpy and related tools to JUMP-CP and EU-OPENSCREEN compound collections, multi-omics integration with matched Perturb-seq data, and uncertainty quantification for mechanism-of-action inference.
 
-**Track 3 - Scalable model training with scverse data standards**
+**Track 3: Scalable model training with scverse data standards**
 Using scverse-native tooling such as annbatch with the EU-OPENSCREEN ECBL dataset to build proof-of-concept ML pipelines for large-scale Cell Painting resources.
 
 ---
