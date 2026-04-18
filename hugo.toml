@@ -1,0 +1,45 @@
+baseURL = "https://scverse.github.io/morphology2026/"
+languageCode = "en-us"
+title = "scverse x morphology"
+
+# ─── Event identity ──────────────────────────────────────────────────────────
+[params]
+  eventName     = "scverse x morphology 2026"
+  eventSeries   = "Unifying Omics Hackathon Series"
+  eventTagline  = "Collaborative science at the intersection of biology and computation."
+  eventDates    = "September 2 - 4, 2026"
+  eventStart    = "2026-09-02"  # ISO date — used for calendar links
+  eventEnd      = "2026-09-04"
+  eventLocation = "Berlin, Germany"
+  venueName     = "Max Delbrück Center (MDC), Campus Berlin-Buch"
+  venueMapURL   = "https://maps.app.goo.gl/DJiAjCKN7TkDTU1u5"  # Google Maps / OpenStreetMap URL for "Get directions"
+  heroImage     = "/img/hero/scverse_symbol.png"
+  heroVideo     = ""            # Set to a .mp4 path to use video instead of image
+
+  # Primary call-to-action button in the hero
+  [params.cta]
+    label = "Apply to join"
+    url   = "https://forms.gle/your-form-link"
+
+  calendarURL   = ""            # Google Calendar / .ics URL
+  githubRepo    = "https://github.com/scverse/morphology2026"
+  contactEmail  = "morphology2026@scverse.org"
+  zulipChannel  = "https://scverse.zulipchat.com/#narrow/channel/591503-2026-09.3A-hackathon-morphology"  # direct channel link
+
+# ─── Per-event colour palette ────────────────────────────────────────────────
+# Only change these — everything else (grey scale, typography) is locked to the
+# scverse brand identity and should not be modified.
+  [params.theme]
+    accent        = "#262fb5"   # buttons, links, active states
+    accentDark    = "#1a2180"   # hover states
+    gradientStart = "#262fb5"   # hero title gradient — left/top
+    gradientEnd   = "#74c8fa"   # hero title gradient — right/bottom
+    highlight     = "#74c8fa"   # badges, chips, accent lines
+
+# ─── Suggested palette presets (copy one block to [params.theme] above) ──────
+# Morphology / orange: accent="#e5864b" accentDark="#b85d2a" gradientStart="#262fb5" gradientEnd="#e5864b" highlight="#fbb822"
+# Spatial / teal:      accent="#40a9ff" accentDark="#0080dd" gradientStart="#262fb5" gradientEnd="#40a9ff" highlight="#6cf1a1"
+# Single-cell / pink:  accent="#de367b" accentDark="#a01d55" gradientStart="#262fb5" gradientEnd="#de367b" highlight="#969dea"
+
+[markup.goldmark.renderer]
+  unsafe = true
