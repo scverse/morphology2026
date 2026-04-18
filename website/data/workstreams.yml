@@ -2,13 +2,13 @@
 # Remove all entries to hide the section.
 # 'lead' is a GitHub username — their avatar is shown automatically.
 - title: "Workstream A"
-  description: "One-sentence description of what this track focuses on."
+  description: "Using scverse tooling for image-based profiling workflows."
   lead: "octocat"
 
 - title: "Workstream B"
-  description: "One-sentence description of what this track focuses on."
+  description: "Single-cell perturbation tools for phenomics data."
   lead: ""
 
 - title: "Workstream C"
-  description: "One-sentence description of what this track focuses on."
+  description: "Facilitating large-scale model training with scverse data standards."
   lead: ""

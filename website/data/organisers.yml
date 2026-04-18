@@ -4,14 +4,21 @@
 groups:
   - name: "scverse"
     members:
-      - name: "Your Name"
-        affiliation: "scverse / Your Institution"
-        github: "your-github-handle"
+      - name: "Tim Treis"
+        affiliation: "scverse / Helmholtz Munich"
+        github: "timtreis"
         website: ""
 
-  - name: "Collaborating Organisation"
+  - name: "CytoData"
     members:
-      - name: "Collaborator Name"
-        affiliation: "Their Institution"
+      - name: "Nikita Moshkov"
+        affiliation: "CytoData / Helmholtz Munich"
+        github: "Arkkienkeli"
+        website: ""
+
+  - name: "EU-OPENSCREEN"
+    members:
+      - name: "Christopher Schmied"
+        affiliation: "EU-OPENSCREEN"
         github: ""
         website: ""

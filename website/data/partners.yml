@@ -2,11 +2,11 @@
 # 'logo' path is relative to static/ (e.g. /img/partners/org.svg).
 # Remove all entries to hide the section.
 - name: "CytoData Society"
-  logo: "/img/partners/cytodata.svg"
+  logo: "/img/partners/logo_cytodata.png"
   url: "https://cytodata.org"
-  blurb: "Co-organising partner."
+  blurb: ""
 
-- name: "Your Partner"
-  logo: "/img/partners/partner.svg"
-  url: "https://partner.example.com"
-  blurb: "Brief description of the partnership."
+- name: "EU-OPENSCREEN"
+  logo: "/img/partners/logo_euopenscreen.png"
+  url: "https://www.eu-openscreen.eu/"
+  blurb: ""

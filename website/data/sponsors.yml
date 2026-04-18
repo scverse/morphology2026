@@ -1,3 +1,7 @@
-- name: "Example Sponsor"
-  logo: "/img/sponsors/example.svg"
-  url: "https://example.com"
+- name: "Helmholtz Munich"
+  logo: "/img/sponsors/logo_helmholtz.svg"
+  url: "https://www.helmholtz-munich.de/"
+
+- name: "Bayer"
+  logo: "/img/sponsors/logo_bayer.svg"
+  url: "https://www.bayer.com"
