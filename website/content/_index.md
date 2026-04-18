@@ -3,8 +3,6 @@ title = "scverse x Your Event 20XX"
 description = "A collaborative hackathon organised by scverse."
 +++
 
-We're excited to bring together researchers and developers working on single-cell and spatial biology to collaborate, share ideas, and build together.
+Recent advances in image-based morphological profiling have created an emerging overlap of biological questions addressed by separate computational ecosystems. This hackathon brings together the scverse, CytoData Society, and EU-OPENSCREEN communities for three days of hands-on development at the MDC Berlin, built around three concrete tracks spanning image-based profiling, single-cell perturbation tools, and scalable model training.
 
-This hackathon is part of our **Unifying Omics** series — a recurring gathering of the scverse community focused on practical, hands-on science.
-
-Whether you're an experienced contributor or joining the scverse ecosystem for the first time, this event is for you.
+We explicitly welcome analysts and biological scientists experienced in Cell Painting workflows alongside software developers, computational biologists, and ML researchers. Domain expertise is as critical as technical development: the goal is reusable open-source tools at the intersection of spatial omics phenomics, and multi-omics data integration.

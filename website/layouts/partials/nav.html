@@ -5,7 +5,7 @@
     <nav class="navbar navbar-expand-lg" aria-label="Site navigation">
 
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-        <img src="/img/logo/scverse_symbol.svg" alt="" width="28" height="28" />
+        <img src="{{ "img/logo/scverse_symbol.svg" | relURL }}" alt="" width="28" height="28" />
         <span>scverse</span>
         <span class="brand-separator mx-1">×</span>
         <span class="brand-event">{{ .Site.Params.eventName | replaceRE "^scverse × " "" | replaceRE "^scverse x " "" }}</span>

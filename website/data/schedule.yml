@@ -8,7 +8,7 @@ days:
         type: "logistics"
       - time: "11:00"
         title: "Opening & Welcome"
-        type: "logistics"
+        type: "talk"
       - time: "12:00"
         title: "On-site lunch"
         type: "break"
@@ -33,7 +33,7 @@ days:
     items:
       - time: "09:00"
         title: "Morning stand-up"
-        type: "talk"
+        type: "logistics"
       - time: "09:30"
         title: "Hackathon sessions"
         type: "hack"
@@ -61,7 +61,7 @@ days:
     items:
       - time: "09:00"
         title: "Morning stand-up"
-        type: "talk"
+        type: "logistics"
       - time: "09:30"
         title: "Hackathon sessions"
         type: "hack"

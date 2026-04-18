@@ -1,14 +1,14 @@
 # Each workstream appears as a card on the homepage.
 # Remove all entries to hide the section.
 # 'lead' is a GitHub username — their avatar is shown automatically.
-- title: "Workstream A"
-  description: "Using scverse tooling for image-based profiling workflows."
-  lead: "octocat"
+- title: "Image-based profiling with scverse tooling"
+  description: "Integrating Scanpy and AnnData into Cell Painting workflows: from raw image ingestion and single-cell segmentation through CellProfiler-compatible feature extraction to population-level profile aggregation, making morphological data fully interoperable with spatial and single-cell pipelines."
+  lead: "timtreis"
 
-- title: "Workstream B"
-  description: "Single-cell perturbation tools for phenomics data."
+- title: "Single-cell perturbation tools for phenomics"
+  description: "Applying pertpy and related tools to large-scale resources such as JUMP-CP and the EU-OPENSCREEN compound collections, exploring multi-omics integration with matched Perturb-seq data, cross-modal mechanism-of-action inference, and uncertainty quantification for actionable hit prioritisation."
   lead: ""
 
-- title: "Workstream C"
-  description: "Facilitating large-scale model training with scverse data standards."
+- title: "Scalable model training with scverse data standards"
+  description: "Tackling infrastructure challenges of modern Cell Painting resources spanning hundreds of thousands of compounds. Using scverse-native tooling such as annbatch with the EU-OPENSCREEN ECBL dataset to produce proof-of-concept ML pipelines ready for post-event follow-up."
   lead: ""

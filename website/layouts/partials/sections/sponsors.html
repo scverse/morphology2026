@@ -8,7 +8,7 @@
     <div class="sponsors-grid">
       {{ range . }}
         <a href="{{ .url }}" class="sponsor-item" target="_blank" rel="noopener" title="{{ .name }}">
-          <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy" />
+          <img src="{{ .logo | strings.TrimPrefix "/" | relURL }}" alt="{{ .name }}" loading="lazy" />
         </a>
       {{ end }}
     </div>

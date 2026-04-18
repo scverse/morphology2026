@@ -6,7 +6,7 @@ title = "scverse x morphology"
 [params]
   eventName     = "scverse x morphology 2026"
   eventSeries   = "Unifying Omics Hackathon Series"
-  eventTagline  = "Collaborative science at the intersection of biology and computation."
+  eventTagline  = "Bridging scverse and morphological profiling communities at the intersection of spatial omics, phenomics, and multi-omics."
   eventDates    = "September 2 - 4, 2026"
   eventStart    = "2026-09-02"  # ISO date — used for calendar links
   eventEnd      = "2026-09-04"
@@ -26,6 +26,7 @@ title = "scverse x morphology"
   githubRepo    = "https://github.com/scverse/morphology2026"
   contactEmail  = "morphology2026@scverse.org"
   zulipChannel  = "https://scverse.zulipchat.com/#narrow/channel/591503-2026-09.3A-hackathon-morphology"  # direct channel link
+  linkedinURL   = "https://www.linkedin.com/company/scverse/"
 
 # ─── Per-event colour palette ────────────────────────────────────────────────
 # Only change these — everything else (grey scale, typography) is locked to the
