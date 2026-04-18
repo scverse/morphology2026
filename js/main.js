@@ -1,3 +1,14 @@
+// Mobile nav: show on scroll
+(function () {
+  const nav = document.querySelector(".site-nav")
+  if (!nav) return
+  function update() {
+    nav.classList.toggle("nav--scrolled", window.scrollY > 60)
+  }
+  window.addEventListener("scroll", update, { passive: true })
+  update()
+})()
+
 // Schedule day tab switching
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".schedule-tab")
