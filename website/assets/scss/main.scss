@@ -257,7 +257,15 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
   }
 
-  // Expanded menu: dark backdrop
+  // Expanded menu: absolutely positioned so it can't overflow viewport
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
   .navbar-collapse.show,
   .navbar-collapse.collapsing {
     background: rgba(10, 10, 26, 0.92);
@@ -322,10 +330,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem 1.5rem;
     max-width: $max-width;
     width: 100%;
-
-    @media (min-width: 992px) {
-      margin-top: 40vh;
-    }
   }
 
   &__series {
@@ -378,17 +382,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     max-width: none;
-    opacity: 0.9;
+    opacity: 0.5;
     pointer-events: none;
     transform: none;
-
-    @media (min-width: 992px) {
-      top: 0;
-      bottom: auto;
-      height: 60vh;
-      object-fit: fill;
-      opacity: 0.7;
-    }
   }
 
   &__scroll {

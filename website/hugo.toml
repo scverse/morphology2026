@@ -20,12 +20,12 @@ title = "scverse x morphology"
   # Primary call-to-action button in the hero
   [params.cta]
     label = "Apply to join"
-    url   = "https://forms.gle/your-form-link"
+    url   = "https://luma.com/acc1jjuq"
 
   calendarURL   = ""            # Google Calendar / .ics URL
-  githubRepo    = "https://github.com/scverse/your-hackathon-repo"
-  contactEmail  = "your-email@scverse.org"
-  zulipChannel  = "https://scverse.zulipchat.com"  # direct channel link
+  githubRepo    = "https://github.com/scverse/morphology2026"
+  contactEmail  = "morphology2026@scverse.org"
+  zulipChannel  = "https://scverse.zulipchat.com/#narrow/channel/591503-2026-09.3A-hackathon-morphology"  # direct channel link
 
 # ─── Per-event colour palette ────────────────────────────────────────────────
 # Only change these — everything else (grey scale, typography) is locked to the
