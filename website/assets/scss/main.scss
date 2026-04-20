@@ -687,7 +687,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .partner-item {
@@ -725,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   gap: 2.5rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .sponsor-item {
