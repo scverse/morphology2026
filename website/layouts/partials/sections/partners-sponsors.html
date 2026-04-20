@@ -1,0 +1,42 @@
+{{ if or hugo.Data.partners hugo.Data.sponsors }}
+<section id="partners" class="section section--alt">
+  <div class="section-inner">
+    <div class="partners-sponsors-grid">
+
+      {{ with hugo.Data.partners }}
+      <div class="partners-sponsors-col">
+        <div class="section-header">
+          <p class="section-label">Collaborating organisations</p>
+          <h2 class="section-title">Partners</h2>
+        </div>
+        <div class="partners-grid">
+          {{ range . }}
+            <a href="{{ .url }}" class="partner-item" target="_blank" rel="noopener" title="{{ .name }}">
+              <img src="{{ .logo | strings.TrimPrefix "/" | relURL }}" alt="{{ .name }}" loading="lazy" />
+              {{ with .blurb }}<p class="partner-item__blurb">{{ . }}</p>{{ end }}
+            </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ with hugo.Data.sponsors }}
+      <div class="partners-sponsors-col">
+        <div class="section-header">
+          <p class="section-label">Made possible by</p>
+          <h2 class="section-title">Sponsors</h2>
+        </div>
+        <div class="sponsors-grid">
+          {{ range . }}
+            <a href="{{ .url }}" class="sponsor-item" target="_blank" rel="noopener" title="{{ .name }}">
+              <img src="{{ .logo | strings.TrimPrefix "/" | relURL }}" alt="{{ .name }}" loading="lazy" />
+            </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}

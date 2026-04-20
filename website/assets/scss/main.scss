@@ -674,6 +674,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// ─── Partners + Sponsors combined row ────────────────────────────────────────
+.partners-sponsors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
 // ─── Partners (collaborating orgs) ───────────────────────────────────────────
 .partners-grid {
   display: flex;
@@ -850,6 +857,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .workstreams-grid {
     grid-template-columns: 1fr;
+  }
+
+  .partners-sponsors-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .partners-grid,
