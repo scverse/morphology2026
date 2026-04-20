@@ -3,7 +3,7 @@
 # Remove all entries to hide the section.
 - name: "CytoData Society"
   logo: "/img/partners/logo_cytodata.png"
-  url: "https://cytodata.org"
+  url: "https://www.cytodata.org"
   blurb: ""
 
 - name: "EU-OPENSCREEN"
